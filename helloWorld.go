@@ -4,11 +4,22 @@ import (
 	"fmt"
 )
 
-func main() {
+func greet(name string) string {
+	return "Howdy, " + name
+}
+
+func askForFeeling() string {
 	var feeling string
 
-	fmt.Println("Hello World, welcome to Lixou's GoLang Test Project 😄")
 	fmt.Print("How do u feel? -> ")
 	fmt.Scanf("%s", &feeling)
+
+	return feeling
+}
+
+func main() {
+	fmt.Println("Hello World, welcome to Lixou's GoLang Test Project 😄")
+	fmt.Println(greet("Lixou"))
+	feeling := askForFeeling()
 	fmt.Println("So u are feeling " + feeling + "?")
 }
