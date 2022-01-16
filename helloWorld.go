@@ -17,14 +17,11 @@ func askForFeeling() string {
 	return feeling
 }
 
-func oldStuff() {
+func main() {
 	fmt.Println("Hello World, welcome to Lixou's GoLang Test Project 😄")
 	fmt.Println(greet("Lixou"))
 	feeling := askForFeeling()
 	fmt.Println("So u are feeling " + feeling + "?")
-}
-
-func main() {
 	x := 7
 	y := &x
 	fmt.Println(x, y)
